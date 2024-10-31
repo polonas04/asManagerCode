@@ -1,0 +1,25 @@
+<nav class="navbar">
+  <h1>Manter Aluno</h1>
+</nav>
+
+<!-- Lista de alertas -->
+<div class="alert-list-container">
+  <ul class="alert-list">
+    <li *ngFor="let aluno of alunos" class="alert-item">
+      <div class="alert-item-content">
+        <a [routerLink]="['/add-aluno/', aluno.id]" class="alert-link">
+          <h2>{{ aluno.nome }}</h2>
+        </a>
+        <button (click)="excluir(aluno)" class="btn btn-danger">Excluir</button>
+      </div>
+    </li>
+  </ul>
+
+  <!-- Botão flutuante para adicionar novo alerta -->
+  <div class="fab-container">
+    <button class="fab-button" routerLink="/add-aluno">
+        +
+    </button>
+  </div>
+</div>
+

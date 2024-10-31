@@ -1,0 +1,34 @@
+<div class="container">
+  <h1 class="title">Manter Usuário</h1>
+  <form [formGroup]="formGroup" (ngSubmit)="salvar()">
+    <!-- Descrição -->
+    <div class="form-row">
+      <label for="nome">Nome</label>
+      <input id="nome" type="text" formControlName="nome">
+    </div>
+
+    <!-- Valor e Quantidade -->
+    <div class="form-row">
+      <label for="login">Login</label>
+      <input id="login" type="text" formControlName="login">
+
+      <label for="senha">Senha</label>
+      <input id="senha" type="text" formControlName="senha">
+
+      <label for="email">E-mail</label>
+      <input id="email" type="text" formControlName="email">
+
+      <label for="tipo">Tipo</label>
+      <select id="role-select" formControlName="tipo">
+        <option value="professor">Professor</option>
+        <option value="aluno">Aluno</option>
+      </select>
+    </div>
+
+    <!-- Botão de Salvar -->
+    <div class="form-row">
+      <button type="submit" [disabled]="!formGroup.valid">Salvar</button>
+    </div>
+  </form>
+</div>
+

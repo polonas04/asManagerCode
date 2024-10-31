@@ -1,0 +1,82 @@
+/* Barra de navegação no topo da página */
+.navbar {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Estilo da lista de alertas */
+.alert-list-container {
+  padding: 2rem;
+}
+
+.alert-list {
+  list-style: none;
+  padding: 0;
+}
+
+.alert-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.alert-item-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.alert-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.alert-link h2 {
+  margin: 0;
+}
+
+.btn-danger {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-danger:hover {
+  background-color: #e60000;
+}
+
+/* Botão flutuante */
+.fab-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.fab-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #333;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.fab-button:hover {
+  background-color: #555;
+}

@@ -1,0 +1,14 @@
+<div class="login-container">
+  <h2>Login</h2>
+  <form [formGroup]="formGroup">
+    <div class="input-group">
+      <label for="login">Login</label>
+      <input type="text" id="login" formControlName = "login" required>
+    </div>
+    <div class="input-group">
+      <label for="senha">Senha</label>
+      <input type="password" formControlName = "senha" required>
+    </div>
+    <button type="submit" class="btn" (click)="onSubmit()" [disabled]="!formGroup.valid">Entrar</button>
+  </form>
+</div>

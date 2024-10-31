@@ -1,0 +1,13 @@
+<nav class="navbar">
+  <h1>Menu Principal</h1>
+</nav>
+
+<div class="menu-container">
+  <ul class="menu-list">
+    <li *ngFor="let page of appPages">
+      <a [routerLink]="[page.url]" class="menu-button">
+        {{ page.title }}
+      </a>
+    </li>
+  </ul>
+</div>

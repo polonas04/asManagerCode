@@ -1,0 +1,22 @@
+<nav class="navbar">
+  <h1>Manter Usuário</h1>
+</nav>
+
+<div class="container">
+  <mat-nav-list>
+    <mat-list-item *ngFor="let usuario of usuarios">
+      <a [routerLink]="['/add-usuario/', usuario.id]" class="alert-link">{{ usuario.nome }}</a>
+      <button mat-icon-button color="warn" (click)="excluir(usuario)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </mat-list-item>
+  </mat-nav-list>
+
+  <div class="fab-container">
+    <button mat-fab color="primary" [routerLink]="['/add-usuario']">
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>
+</div>
+
+
